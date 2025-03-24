@@ -1,39 +1,46 @@
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
-import React from "react";
-import Footer from "./Footer";
-import { HiChevronDoubleRight } from "react-icons/hi";
+import Image from "next/image";
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <div>
-      <section className="h-screen">
-        <div className="mx-auto max-w-screen-xl px-4 pt-32 pb-10 lg:flex lg:items-center">
-          <div className="mx-auto max-w-xl text-center">
-            <h1 className="text-3xl font-extrabold sm:text-5xl text-primary">
-              <span className="text-black"> AI Course </span>Generator.
-              <strong className=" mt-12 font-medium text-3xl text-black sm:block">
-                {" "}
-                Custom Learning paths, Powered By AI.{" "}
-              </strong>
-            </h1>
-
-            <p className="mt-4 text-xm relaxed">
-              Unlock personalized education with AI-driven course creation.
-              Tailor your learning journey to fit your unique goals and pace.
-            </p>
-
-            <div className="mt-40 flex flex-wrap justify-center gap-4 cursor-pointer">
-              <Link href={"/explore-course"}>
-                <Button variant="startButton" size="lg">Explore Now.<HiChevronDoubleRight className="text-xl" /></Button>
-              </Link>
-            </div>
-          </div>
-        </div>
+    <section
+      className="min-h-screen flex flex-col justify-center items-center text-center text-white px-6"
+      style={{
+        background: "linear-gradient(to right, #a084ca, #6f9ceb)" // Rich pastel purple to deeper blue
+      }}
       
-      </section>
-    </div>
-  );
-};
+      
+      
+    >
+      {/* Title */}
+      <h1 className="text-5xl font-bold pt-32">
+        AI Course Crafter 🚀
+      </h1>
 
-export default Hero;
+      {/* Catchy Subtitle */}
+      <p className="text-lg mt-4 max-w-2xl">
+      "Infinite possibilities await! 
+       Create, explore, and master new skills effortlessly with AI-powered courses.
+      Start your journey today!
+      </p>
+
+      {/* Image */}
+      <div className="mt-6">
+        <Image
+          src="/hero.png" // Ensure this file exists in the public folder
+          alt="AI Learning"
+          width={500}
+          height={300}
+          className="w-auto h-auto"
+        />
+      </div>
+
+      {/* CTA Button */}
+      <a
+        href="/explore-course"
+        className="mt-6 px-6 py-3 bg-white text-gray-800 rounded-lg text-lg font-semibold hover:bg-gray-200 transition"
+      >
+        🔍 Explore Now
+      </a>
+    </section>
+  );
+}

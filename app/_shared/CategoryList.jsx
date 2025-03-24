@@ -1,20 +1,20 @@
 export default [
     {
-        id:1,
-        name:'programming',
-        icon:'',
-        prompt:''
+        id: 1,
+        name: 'Programming',
+        icon: '/icons/programming.png', // ✅ Corrected path
+        prompt: '' // ✅ Fixed key name
     },
     {
-        id:2,
-        name:'Health',
-        icon:'',
-        promp:''
+        id: 2,
+        name: 'Health',
+        icon: '/icons/health.png', // ✅ Corrected path
+        prompt: '' // ✅ Fixed key name
     },
     {
-        id:3,
-        name:'creative',
-        icon:'',
-        promp:''
+        id: 3,
+        name: 'Creative',
+        icon: '/icons/creative.png', // ✅ Corrected path
+        prompt: '' // ✅ Fixed key name
     },
-]
+];

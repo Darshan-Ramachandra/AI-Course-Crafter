@@ -38,9 +38,7 @@ const TermsAndCondition = () => {
     <p className="mb-4">
       We may update these terms and conditions from time to time. Your continued use of the website following any changes will be deemed acceptance of those changes.
     </p>
-    <p className="mb-4">
-      If you have any questions about these terms, please contact us at <strong>mr.pankajpandey0038@gmail.com</strong>.
-    </p>
+    
   </div>
   <Footer/>
     </>

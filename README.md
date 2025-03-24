@@ -56,7 +56,6 @@ An AI-powered platform for creating and managing online courses. Built using **N
 | **Firebase**    | Provides file storage and database management.                              |
 | **Tailwind CSS**| A utility-first CSS framework for styling.                                  |
 | **React Icons** | A library of icons for React applications.                                  |
-| **Vercel**      | A platform for hosting and deploying web applications.                      |
 
 
 
@@ -65,7 +64,7 @@ An AI-powered platform for creating and managing online courses. Built using **N
 - **Clone the repository**
 
    ```bash
-    git clone https://github.com/mrpankajpandey/ai-course-generator.git
+    git clone 
    ```
 - **Navigate to the project directory**
 
@@ -93,15 +92,7 @@ An AI-powered platform for creating and managing online courses. Built using **N
     npm run dev
    ```
 
-## Live Demo :globe_with_meridians:
 
-<a href="https://mrpankajpandey-ai-course.vercel.app/">
-    <img height="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/chrome/chrome-original.svg" />
-</a>
-
-## Contribution Guidelines :raising_hand: 
-
-We welcome contributions to improve the platform. Here are the steps to get started:
 
 ### 1. Fork the Repository
 
@@ -156,6 +147,4 @@ Your pull request will be reviewed by the maintainers. Please be responsive to a
 
 Once approved, your pull request will be merged into the main branch. Congratulations on your contribution!
 
->[!TIP]
->**Follow [CONTRIBUTING.md](https://github.com/mrpankajpandey/ai-course-generator/blob/main/CONTRIBUTING.md) for detailed guidelines**
 

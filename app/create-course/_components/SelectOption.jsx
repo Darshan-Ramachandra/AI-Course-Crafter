@@ -53,9 +53,9 @@ const SelectOption = () => {
               <SelectValue placeholder="Select" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="1 Hourse">1 Hourse</SelectItem>
-              <SelectItem value="2 Hourse">2 Hourse</SelectItem>
-              <SelectItem value="More than 3 Hourse">
+              <SelectItem value="1 Hour">1 Hour</SelectItem>
+              <SelectItem value="2 Hours">2 Hours</SelectItem>
+              <SelectItem value="More than 3 Hours">
                 More Than 3 Hours
               </SelectItem>
             </SelectContent>
@@ -63,7 +63,7 @@ const SelectOption = () => {
         </div>
         <div>
           <label htmlFor="" className="text-xm">
-            ▶️Add Video
+            ▶️Video
           </label>
           <Select
             onValueChange={(value) => handleInputChange("displayVideo", value)}
@@ -74,18 +74,30 @@ const SelectOption = () => {
             </SelectTrigger>
             <SelectContent>
               <SelectItem value="Yes">Yes</SelectItem>
-              <SelectItem value="No">No</SelectItem>
+              {/* <SelectItem value="No">No</SelectItem> */}
             </SelectContent>
           </Select>
-        </div>
-        <div>
-          <label htmlFor="">No of Chapters</label>
-          <Input
-            onChange={(e) => handleInputChange("noOfChapter", e.target.value)}
-            defaultValue={userCourseInput?.noOfChapter}
-            type="number"
-          />
-        </div>
+          </div>
+
+<div>
+  <label>No of Chapters</label>
+  <Input
+    onChange={(e) => {
+      let value = Number(e.target.value);
+      if (value < 0) value = 0;
+      if (value > 10) {
+        alert("Max limit is 10 chapters!"); // Small alert popup
+        value = 10;
+      }
+      handleInputChange("noOfChapter", value);
+    }}
+    defaultValue={userCourseInput?.noOfChapter}
+    type="number"
+    min="0"
+    max="10"
+  />
+</div>
+
       </div>
     </div>
   );

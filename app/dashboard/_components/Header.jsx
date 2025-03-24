@@ -73,7 +73,7 @@ const Header = () => {
       <div className="flex items-center gap-2">
            <Link className="flex items-center gap-2 cursor-pointer" href={'/'}>
         <Image src={"/logo.png"} width={44} height={44} />{" "}
-        <span className="font-bold text-xl">AI Course Generator</span>
+        <span className="font-bold text-xl">AI Course Crafter</span>
            </Link>
 
       </div>
