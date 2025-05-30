@@ -10,7 +10,7 @@ const Addcourse = () => {
     const{userCourseList, setUserCourseList} = useContext(UserCourseListContext)
     
     console.log(userCourseList?.length);
-  const isAdmin = user?.primaryEmailAddress?.emailAddress == 'ddarshanrk.sse24@rvce.edu.in'
+  const isAdmin = user?.primaryEmailAddress?.emailAddress == 'darshanrk.sse24@rvce.edu.in'
   const hasCourseLimit = userCourseList?.length >= 2;
   const destination = isAdmin || !hasCourseLimit ? '/create-course' : '/dashboard/upgrade';
     
