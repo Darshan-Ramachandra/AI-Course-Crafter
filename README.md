@@ -103,7 +103,7 @@ Click the "Fork" button at the top right of the repository page to create a copy
 Clone your forked repository to your local machine using the following command:
 
 ```bash
-git clone https://github.com/<your-username>/ai-course-generator.git
+git clone https://github.com/Darshan-Ramachandra/AI-Course-Crafter.git
 ```
 
 ### 3. Create a Branch
