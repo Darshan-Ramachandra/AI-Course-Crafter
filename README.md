@@ -64,7 +64,7 @@ An AI-powered platform for creating and managing online courses. Built using **N
 - **Clone the repository**
 
    ```bash
-    git clone 
+    git clone https://github.com/Darshan-Ramachandra/AI-Course-Crafter.git
    ```
 - **Navigate to the project directory**
 
